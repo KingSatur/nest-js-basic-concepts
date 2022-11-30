@@ -30,6 +30,10 @@ export class BrandsService {
     return brand;
   }
 
+  fillBrandsWithSeed(brands: Brand[]) {
+    this.brands = brands;
+  }
+
   findAll() {
     return this.brands;
   }

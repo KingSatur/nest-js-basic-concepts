@@ -24,6 +24,10 @@ export class CarsService {
     return this.cars;
   }
 
+  fillCarsWithSeed(cars: Car[]) {
+    this.cars = cars;
+  }
+
   updateCar(id: string, updateCarDto: UpdateCarDto) {
     let car = this.findById(id);
 
